@@ -44,11 +44,9 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Why Track Muscle Activity</h2>
+
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Tracking muscle activity through EMG sensors provides real-time feedback on your rehabilitation
-                  progress. This data helps identify patterns of improvement, guides exercise adjustments, and motivates
-                  continued effort by visualizing your recovery journey.
+                A wearable rehabilitation system that replicates healthy arm movements onto a paralyzed hand using sensors and servo motors for adaptive bilateral therapy.
                 </p>
               </div>
             </div>
