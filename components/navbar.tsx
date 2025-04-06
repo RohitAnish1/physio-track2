@@ -19,14 +19,6 @@ const routes = [
     path: "/instructions",
   },
   {
-    name: "Live Readings",
-    path: "/live-readings",
-  },
-  {
-    name: "Progress Tracker",
-    path: "/progress-tracker",
-  },
-  {
     name: "Rehabilitation Exercises",
     path: "/rehabilitation-exercises",
   },

@@ -27,11 +27,6 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/live-readings">
-                    <Button variant="outline" className="w-full min-[400px]:w-auto">
-                      View Live Readings
-                    </Button>
-                  </Link>
                 </div>
               </div>
               <Image
