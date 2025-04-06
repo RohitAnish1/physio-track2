@@ -107,15 +107,6 @@ export default function InstructionsPage() {
             </li>
           </ol>
         </div>
-
-        <div className="flex justify-center">
-          <Link href="/live-readings">
-            <Button size="lg">
-              Proceed to Live Readings
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
-        </div>
       </div>
     </div>
   )
