@@ -94,10 +94,6 @@ export default function InstructionsPage() {
               ensuring it fits comfortably.
             </li>
             <li className="text-base">
-              <span className="font-medium">Connect to the app:</span> Open the Blynk app and connect to your device via
-              Bluetooth.
-            </li>
-            <li className="text-base">
               <span className="font-medium">Calibration:</span> Keep both hands steady during the initial calibration
               process.
             </li>
