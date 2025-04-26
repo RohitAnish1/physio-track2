@@ -1,86 +1,87 @@
-Physio-Track 2 is a comprehensive platform designed to track, analyze, and manage physiotherapy sessions. Built primarily with **TypeScript**, **CSS**, and **JavaScript**, this application provides features for both physiotherapists and patients, ensuring an efficient and user-friendly experience.
+# Physio-Track2: Bilateral Training for Monoplegic Patients
+
+Physio-Track2 is an innovative rehabilitation system designed to assist monoplegic patients in regaining arm movement through bilateral training. The system leverages a robotic glove, EMG sensors, and real-time data visualization to provide adaptive therapy and progress tracking.
 
 ## Features
 
-- **Patient Management**: Add, edit, and manage patient profiles.
-- **Session Tracking**: Record and monitor physiotherapy sessions, including exercises performed and progress over time.
-- **Data Visualization**: Display progress and analytics using charts and graphs.
-- **Customizable Exercises**: Create and assign personalized exercise regimens for patients.
-- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **Real-Time EMG Monitoring**: Visualize muscle activity data in real-time.
+- **Rehabilitation Exercises**: Guided exercises for different skill levels (Beginner, Intermediate, Advanced).
+- **Progress Tracking**: Track improvement over time with detailed charts and summaries.
+- **Live Readings**: Monitor live EMG readings during therapy sessions.
+- **Customizable UI**: Dark mode support and responsive design for various devices.
+- **Integration with Firebase**: Simulated real-time data updates (can be replaced with actual Firebase integration).
 
 ## Tech Stack
 
-- **Frontend**: 
-  - TypeScript (97.3% of the codebase)
-  - CSS (2.2%)
-  - JavaScript (0.5%)
-- **Backend**: (Specify backend technology if applicable)
-- **Database**: (Specify database used if applicable)
-- **Build Tools**: (e.g., Webpack, Vite)
+- **Frontend**: React, Next.js, TypeScript
+- **UI Framework**: Tailwind CSS
+- **Charts**: Recharts
+- **State Management**: React Context API
+- **Icons**: Lucide React
 
 ## Getting Started
 
-Follow these steps to set up and run Physio-Track 2 locally.
+Follow these steps to set up the project locally:
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
-- Git
+- Node.js (v16 or higher)
+- pnpm (v7 or higher)
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RohitAnish1/physio-track2.git
-Navigate to the project directory:
-bash
-cd physio-track2
-Install dependencies:
-bash
-npm install
-# or
-yarn install
-Running the Application
-Start the development server:
-bash
-npm start
-# or
-yarn start
-Open your browser and go to http://localhost:3000.
-Building for Production
-To create a production build:
+   git clone https://github.com/your-username/physio-track2.git
+   cd physio-track2
+   ```
 
-bash
-npm run build
-# or
-yarn build
-The production-ready files will be available in the dist or build directory.
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-Folder Structure
-Code
+3. Start the development server:
+   ```bash
+   pnpm dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+### Configuration
+
+- Firebase integration can be added by replacing the mock data functions in `components/emg-chart.tsx` and `app/live-readings/page.tsx` with actual Firebase API calls.
+- Tailwind CSS configuration can be customized in `tailwind.config.ts`.
+
+## Project Structure
+
+```
 physio-track2/
-├── src/
-│   ├── components/    # Reusable UI components
-│   ├── pages/         # Application pages
-│   ├── styles/        # CSS or SCSS for styling
-│   ├── utils/         # Helper functions
-│   ├── services/      # API calls and data management
-│   └── index.tsx      # Application entry point
-├── public/            # Static assets
-├── package.json       # Project metadata and dependencies
-└── README.md          # Project documentation
-Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
+├── app/                     # Next.js app directory
+├── components/              # Reusable React components
+├── hooks/                   # Custom React hooks
+├── lib/                     # Utility functions
+├── styles/                  # Global and Tailwind CSS styles
+├── public/                  # Static assets
+├── README.md                # Project documentation
+└── pnpm-lock.yaml           # Dependency lockfile
+```
 
-Fork the repository.
-Create a new branch for your feature or bug fix:
-bash
-git checkout -b feature-name
-Commit your changes:
-bash
-git commit -m "Add feature-name"
-Push to your branch:
-bash
-git push origin feature-name
-Open a pull request.
+## Contributing
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
